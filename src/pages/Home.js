@@ -2,7 +2,7 @@ import React from 'react';
 import FitnessLog from '../components/FitnessLog';
 import GoalTracking from '../components/GoalTracking';
 import Footer from './Footer';
-import { Form, Link } from 'react-router-dom';  // Make sure to import Link for routing
+import { Link } from 'react-router-dom';  // Make sure to import Link for routing
 
 
 const Home = () => {
@@ -15,14 +15,14 @@ const Home = () => {
           <p className="text-lg text-gray-600">Track your fitness, nutrition, and goals all in one place</p>
         </div>
 
-        {/* Health and Wellness Image
+        Health and Wellness Image
         <div className="mb-12 text-center">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3nXvgfUresNr-pR-cOWukjmsW5oHSOVu6lg&s" 
             alt="Health and Wellness"
             className="w-full h-auto rounded-lg shadow-lg"
           />
-        </div> */}
+        </div>
 
         {/* Dashboard Main Section */}
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
-import Chart from 'chart.js/auto';
+// import Chart from 'chart.js/auto';
 
 // Modal Component
 const Modal = ({ message, onClose }) => (
@@ -55,7 +55,8 @@ const GoalTracking = () => {
         },
         body: JSON.stringify(goals),
       });
-      const data = await response.json();
+      // const data = 
+      await response.json();
       setModalMessage('Goals set successfully!');
       setShowModal(true);
     } catch (error) {
@@ -74,7 +75,8 @@ const GoalTracking = () => {
         },
         body: JSON.stringify(progress),
       });
-      const data = await response.json();
+      // const data = 
+      await response.json();
       setModalMessage('Progress updated successfully!');
       setShowModal(true);
     } catch (error) {
