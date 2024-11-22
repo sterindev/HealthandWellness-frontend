@@ -19,7 +19,7 @@ const NutritionGoals = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/nutrition-goals', {
+      const response = await fetch('https://healthandwellness-backend.onrender.com/api/nutrition-goals', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

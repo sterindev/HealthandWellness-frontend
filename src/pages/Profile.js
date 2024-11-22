@@ -24,7 +24,7 @@ const ProfilePage = () => {
       setIsLoading(true);
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('/api/user/profile', {
+        const response = await axios.get('https://healthandwellness-backend.onrender.com/api/user/profile', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUserData(response.data);
@@ -40,7 +40,7 @@ const ProfilePage = () => {
       setIsLoading(true);
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('/api/user/tracking', {
+        const response = await axios.get('https://healthandwellness-backend.onrender.com/api/user/tracking', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setHealthData(response.data);
@@ -68,7 +68,7 @@ const ProfilePage = () => {
     setIsLoading(true);
     try {
       const token = localStorage.getItem('token');
-      await axios.put('/api/user/profile', userData, {
+      await axios.put('https://healthandwellness-backend.onrender.com/api/user/profile', userData, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setIsEditing(false); // Exit edit mode after saving

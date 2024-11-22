@@ -48,7 +48,7 @@ const GoalTracking = () => {
     e.preventDefault();
     setIsGoalSet(true);
     try {
-      const response = await fetch('http://localhost:5000/api/goals', {
+      const response = await fetch('https://healthandwellness-backend.onrender.com/api/goals', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ const GoalTracking = () => {
   const handleProgressSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/progress', {
+      const response = await fetch('https://healthandwellness-backend.onrender.com//api/progress', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

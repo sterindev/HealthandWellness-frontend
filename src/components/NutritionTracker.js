@@ -18,7 +18,7 @@ const NutritionTracking = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/foodlogs', {
+      const response = await fetch('https://healthandwellness-backend.onrender.com/api/foodlogs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

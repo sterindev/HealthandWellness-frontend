@@ -20,7 +20,7 @@ const LoginRegisterPage = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = isLogin ? 'http://localhost:5000/api/auth/login' : 'http://localhost:5000/api/auth/register'; // API endpoint based on login or register
+    const url = isLogin ? 'https://healthandwellness-backend.onrender.com/api/auth/login' : 'https://healthandwellness-backend.onrender.com/api/auth/register'; // API endpoint based on login or register
 
     try {
       const response = await axios.post(url, {

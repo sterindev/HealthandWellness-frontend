@@ -46,7 +46,7 @@ const FitnessLog = () => {
 
     try {
       // const response = 
-      await axios.post('http://localhost:5000/api/exercises', {
+      await axios.post('https://healthandwellness-backend.onrender.com/api/exercises', {
         exerciseType: exerciseData.exerciseType,
         duration: exerciseData.duration,
         distance: exerciseData.distance,
@@ -74,7 +74,7 @@ const FitnessLog = () => {
   // Fetch exercise logs from backend
   const fetchExerciseLogs = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/exercises');
+      const response = await axios.get('https://healthandwellness-backend.onrender.com/api/exercises');
       setExerciseLogs(response.data); // Set logs in state
     } catch (error) {
       console.error('Error fetching exercise logs:', error);
